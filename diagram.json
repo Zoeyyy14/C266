@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "author": "Zoey Ma",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": -9, "left": -10.2, "attrs": {} },
+    { "type": "wokwi-ds1307", "id": "rtc1", "top": -82.2, "left": 259.3, "attrs": {} },
+    { "type": "wokwi-ky-040", "id": "encoder1", "top": -94.3, "left": -68, "attrs": {} }
+  ],
+  "connections": [
+    [ "rtc1:GND", "uno:GND.1", "black", [ "h0" ] ],
+    [ "rtc1:5V", "uno:5V", "red", [ "h0" ] ],
+    [ "rtc1:SDA", "uno:A4", "green", [ "h0" ] ],
+    [ "rtc1:SCL", "uno:A5", "green", [ "h0" ] ],
+    [ "encoder1:GND", "uno:GND.1", "black", [ "h0" ] ],
+    [ "encoder1:CLK", "uno:2", "green", [ "h0" ] ],
+    [ "encoder1:DT", "uno:3", "green", [ "h0" ] ],
+    [ "encoder1:SW", "uno:4", "green", [ "h0" ] ],
+    [ "encoder1:VCC", "uno:5V", "red", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
